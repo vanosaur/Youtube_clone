@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+                color:white;  
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                /* padding: 10px 20px; */
+                background-color: black;
+                position:fixed;
+                gap:425px;       
+            }
+
+
+                header .search-container {
+                    display: flex;
+                    align-items: center;
+                
+                    
+                }
+
+                header input {
+                    padding: 8px;
+                    width: 300px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                   
+                }
+                
+            aside {
+                background-color: rgb(68, 65, 65); 
+                position:fixed; 
+                margin-top:100px;
+                             
+            }
+            aside nav ul {
+                list-style: none;
+                padding:20px;
+            }
+            .emoji{
+                padding: 10px 1px;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius:8px;
+            }
+            aside nav ul li:hover {
+                cursor: pointer;
+                background-color: rgb(110, 108, 108);
+            }
+            .emoji img{
+            border-radius:90%;
+            height: 20px;  
+            }
+            #line{
+                border-bottom:2px solid darkgray;
+                margin-bottom: 10px;
+                
+            }
+        
+            .main123{
+                display: grid;
+                grid-template-columns: repeat(3,390px);
+                gap: 20px;
+                margin-left: 200px;
+                padding: 40px;
+                position:static;
+                top: 150px;
+            }
+
+            .video-card {
+                background-color:rgb(43, 43, 43);
+                border-radius: 8px;
+            }
+
+            .video-info {
+                padding: 10px;
+            }
+
+            .video-title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .channel-name {
+                font-size: 14px;
+                color: #716d6d;
+            }
+            .tags span{
+                background-color: rgb(58, 57, 57);
+                list-style-type: none;
+                border-radius: 5px;
+                text-align: center;
+                padding: 2px;
+                
+            }
+            .tags{
+                margin-top: 90px;
+                margin-left: 240px;
+                margin-bottom: 0;
+                position:fixed; 
+                background-color: black;
+                width:1344px;
+                height:30px;
+                align-content: center;
+
+            }
+            /* main{
+                margin-top: 120px;
+            }   */
+
+        </style>
+    </head>
+    <body>
+            <header>
+                <div class="logo"><img width="200px" height="100px" src="Screenshot 2024-12-07 at 2.15.35 PM.png"></div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button>🔍</button>
+                </div>
+                <div class="user-options">
+                    <button>🔔</button>
+                    <button>👤</button>
+                </div>
+            </header>
+
+            <div class="tags">
+                <span>All</span> <span>Music</span> <span>Dance</span> <span>Study Music</span> <span>Choreography</span> <span>Music</span> <span>Music</span> <span>Kdrama</span> <span>T-series</span> <span>News</span> <span>Lofi hits</span> <span>Recently watched</span> <span>Currently watching</span> <span>Watch Later</span> <span>Liked videos</span> <span>Vlogs</span> <span>Daily flow</span> <span>More ></span>
+                
+            </div>
+                  
+    
+        <aside>
+            <nav>
+            <ul>
+               
+                <li class="emoji">🏠 Home</li>
+                <li class="emoji">ϟϟ Shorts</li>
+                <li class="emoji">🏷️ Subscriptions</li>
+                <li id="line"></li>
+                <li class="main">You ></li>
+                <li class="emoji">📊 History</li>
+                <li class="emoji">📂 Playlists</li>
+                <li class="emoji">💡  Your courses</li>
+                <li class="emoji">⏱ Watch Later</li>
+                <li class="emoji">👍🏻 Liked videos</li>
+                <li id="line"></li>
+                <li class="main">Subscriptions</li>
+                <li class="emoji"><img src="https://yt3.googleusercontent.com/al5a-TjybDtOQrBzpxpLkrG9uMTWpofw43Al81L5I9szAzZ8IutjqVVO8pH_RXb6CRim9lHMMw=s160-c-k-c0x00ffffff-no-rj">&nbsp;&nbsp;&nbsp;Classic Mr Bean</li>
+                <li class="emoji"><img src="https://yt3.googleusercontent.com/DK_ErT9Njg9UBnekWivc9A0xULKcyU_CgO9q9-C4D3ZEE2IKCOx9C2ixxx6GLykTvQhv5Au6LQ=s160-c-k-c0x00ffffff-no-rj">&nbsp;&nbsp;&nbsp;nobody</li>
+                <li class="emoji"><img src="https://yt3.googleusercontent.com/WW0ZKAb2qKAGHdAv3YIM52ZJ-zWJNZsB5o1CUxFCkTf2dEHhaRr7-bMTO8ULAx3RW8uf_YJr=s160-c-k-c0x00ffffff-no-rj">&nbsp;&nbsp;&nbsp;Newton school<br>technology</li>
+                <li class="emoji"><img src="https://yt3.googleusercontent.com/VY4DYRWFYKJUU9jbhfUmQdiDdlI4pCwDvx81Wv7JLf-bYRuhd5xoLl6DpExtud-B1_jNU2ViYA=s160-c-k-c0x00ffffff-no-rj">&nbsp;&nbsp;&nbsp;MSA</li>
+                <li class="emoji"><img src="https://yt3.googleusercontent.com/XE7Iq8jvJ07ptMc-HxZR_V-2XgXCb0i06i4E_dypl7xSR655WXaQeglfqNuEeuwH3oM9RKVodQ=s160-c-k-c0x00ffffff-no-rj">&nbsp;&nbsp;&nbsp;T-series</li>
+                <li class="emoji"><img src="https://yt3.googleusercontent.com/vzccd947ZTCKG3FC9qa7geaB-O7euPpCQB0_PzRdzdKa-pPNvSkG686Luyq_TTUdV14W_es6ZeY=s160-c-k-c0x00ffffff-no-rj">&nbsp;&nbsp;&nbsp;Oggy-Hindi</li>
+                
+            </ul>
+        </nav>
+
+        </aside>
+        
+       
+        <main>
+
+            <div class="main123">
+
+                <div class="video-card">
+                    <iframe width="390" height="315" src="https://www.youtube.com/embed/9dTGIe8BcSo?si=_MWLFbVZpui7kWwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <p class="video-title">Season Of Love - Music Video - Gamma Skies, Victor Lundberg</p>
+                        <p class="channel-name">MSA</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="390" height="315" src="https://www.youtube.com/embed/dT9ih0FVtEY?si=7BZOO9X8ZFJriu0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <p class="video-title">Teenage Dream</p>
+                        <p class="channel-name">Stephen Dawes</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="390" height="315" src="https://www.youtube.com/embed/T0NEiW5S8k8?si=tVObSHJiTu3r4LPZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <p class="video-title">Jungkook - Decalcomania (visual lyric video)</p>
+                        <p class="channel-name">everythinggoes</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="390" height="315" src="https://www.youtube.com/embed/iqGAW57EudQ?si=Y2WV09PNTvExWRY1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <p class="video-title">About You - The 1975</p>
+                        <p class="channel-name">tinted heart</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="390" height="315" src="https://www.youtube.com/embed/b_CpWmkhwq0?si=qU3bFI8w5EBjxdAS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <p class="video-title">Die with a smile</p>
+                        <p class="channel-name">editaudits</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="390" height="315" src="https://www.youtube.com/embed/98zHKN-xSHk?si=ua9ml-UUfQ9942B7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <p class="video-title">Those eyes</p>
+                        <p class="channel-name">New west</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>
